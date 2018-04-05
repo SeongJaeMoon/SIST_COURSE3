@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+
+</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>자바스크립트 함수(Function)</h1>
+	<p id="demo">결과 출력 예정</p>
+	<button onclick="mySample()">Click Me!</button>
+</div>
+
+<script>
+
+/* 
+
+자바스크립트 함수(Function)
+
+- 함수 : 자바스크립트 코드의 집합체.
+- 함수 형식
+function functionName(parameters) {
+	  code to be executed
+}
+- 자바스크립트 코드의 마지막에 return 구문 추가 가능. 반환값 처리 가능.
+- 함수의 매개변수는 필요시 선언 가능. 변수 앞에 var 키워드 없다.
+- 함수 선언 위치에 관계없이 호출 가능.
+- 함수 선언 결과를 변수에 저장 가능. 익명 함수(Function Expressions). 이벤트 처리시 익명 함수 사용.
+var 변수 = function (parameters) {  code to be executed };
+- 함수는 호출시에만 실행 가능.
+- 호출 방법
+1. 자바스크립트 내에서 호출
+2. 이벤트 발생시 호출
+
+*/
+
+function myFunction(a, b) {
+    return a * b;
+}
+
+function mySample() { 
+	var x = myFunction(4, 3);
+	document.getElementById("demo").innerHTML = x;
+}
+
+</script>
+</body>
+</html>

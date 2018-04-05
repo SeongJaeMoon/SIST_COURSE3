@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+
+</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>자바스크립트 BOM(Browser Object Model)</h1>
+	<p id="demo">결과 출력 예정</p>
+</div>
+
+<script>
+/*
+자바스크립트 내장객체
+
+- 객체는 자바스크립트 프로그램의 대상이다.
+- 내장 객체는 자바스크립트가 기본적으로 제공하는 객체이다.
+- BOM(Browser Object Model)은 브라우저를 객체로 인식하고, 브라우저 자신을 프로그램으로 통제하는 방법. 예를 들어, 창 열기, 창 닫기.
+- DOM(Document Object Model)은 현재 메모리에 로딩되어 있는 웹페이지를 객체로 인식하고, 웹페이지 자신을 프로그램으로 통제하는 방법. 예를 들어, 페이지 내의 특정 콘텐츠에 대한 수정, 삭제 등.
+- 사용자 정의 객체
+
+BOM(Browser Object Model)
+- 자바스크립트가 실행되고 있는 브라우저 자신을 객체로 인식.
+- window 객체는 BOM에서 최상위 객체. 표기시 생략 가능.
+- document 객체는 브라우저에서 실행되고 있는 웹페이지 객체. window.document 또는 document 로 표기.
+
+- Window Object Properties
+closed	Returns a Boolean value indicating whether a window has been closed or not
+console	Returns a reference to the Console object, which provides methods for logging information to the browser's console (See Console object)
+defaultStatus	Sets or returns the default text in the statusbar of a window
+document	Returns the Document object for the window (See Document object)
+frameElement	Returns the <iframe> element in which the current window is inserted
+frames	Returns all <iframe> elements in the current window
+history	Returns the History object for the window (See History object)
+innerHeight	Returns the inner height of a window's content area
+innerWidth	Returns the inner width of a window's content area
+length	Returns the number of <iframe> elements in the current window
+localStorage	Allows to save key/value pairs in a web browser. Stores the data with no expiration date
+location	Returns the Location object for the window (See Location object)
+name	Sets or returns the name of a window
+navigator	Returns the Navigator object for the window (See Navigator object)
+opener	Returns a reference to the window that created the window
+outerHeight	Returns the outer height of a window, including toolbars/scrollbars
+outerWidth	Returns the outer width of a window, including toolbars/scrollbars
+pageXOffset	Returns the pixels the current document has been scrolled (horizontally) from the upper left corner of the window
+pageYOffset	Returns the pixels the current document has been scrolled (vertically) from the upper left corner of the window
+parent	Returns the parent window of the current window
+screen	Returns the Screen object for the window (See Screen object)
+screenLeft	Returns the horizontal coordinate of the window relative to the screen
+screenTop	Returns the vertical coordinate of the window relative to the screen
+screenX	Returns the horizontal coordinate of the window relative to the screen
+screenY	Returns the vertical coordinate of the window relative to the screen
+sessionStorage	Allows to save key/value pairs in a web browser. Stores the data for one session
+scrollX	An alias of pageXOffset
+scrollY	An alias of pageYOffset
+self	Returns the current window
+status	Sets or returns the text in the statusbar of a window
+top	Returns the topmost browser window
+
+- Window Object Methods
+alert()	Displays an alert box with a message and an OK button
+atob()	Decodes a base-64 encoded string
+blur()	Removes focus from the current window
+btoa()	Encodes a string in base-64
+clearInterval()	Clears a timer set with setInterval()
+clearTimeout()	Clears a timer set with setTimeout()
+close()	Closes the current window
+confirm()	Displays a dialog box with a message and an OK and a Cancel button
+focus()	Sets focus to the current window
+getComputedStyle()	Gets the current computed CSS styles applied to an element
+getSelection()	Returns a Selection object representing the range of text selected by the user
+matchMedia()	Returns a MediaQueryList object representing the specified CSS media query string
+moveBy()	Moves a window relative to its current position
+moveTo()	Moves a window to the specified position
+open()	Opens a new browser window
+print()	Prints the content of the current window
+prompt()	Displays a dialog box that prompts the visitor for input
+resizeBy()	Resizes the window by the specified pixels
+resizeTo()	Resizes the window to the specified width and height
+scroll()	Deprecated. This method has been replaced by the scrollTo() method.
+scrollBy()	Scrolls the document by the specified number of pixels
+scrollTo()	Scrolls the document to the specified coordinates
+setInterval()	Calls a function or evaluates an expression at specified intervals (in milliseconds)
+setTimeout()	Calls a function or evaluates an expression after a specified number of milliseconds
+stop()	Stops the window from loading
+
+*/
+
+var res = prompt("구구단(1~9) 선택하세요.", "1");
+
+var str = "";
+for (var a=1; a<=9; ++a) {
+	str += res + " * " + a + "  = " + (res * a) + "<br>";
+}
+
+document.getElementById("demo").innerHTML = str;
+
+</script>
+</body>
+</html>

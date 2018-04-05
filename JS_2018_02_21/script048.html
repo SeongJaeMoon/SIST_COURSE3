@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script src="util.js"></script>
+
+</head>
+<body>
+
+<div id="content">
+	<h1>자바스크립트 DOM(Document Object Model)</h1>
+
+	<!-- <form> -->
+		<div>Cats: <input name="animal" type="checkbox" value="Cats"></div>
+		<div>Dogs: <input name="animal" type="checkbox" value="Dogs"></div>
+
+		<p>Click the button to check all checkboxes that have a name
+			attribute with the value "animal".</p>
+
+		<button onclick="myFunction()">Try it</button>
+	<!-- </form> -->
+
+</div>
+
+<script>
+
+/*
+자바스크립트 내장객체
+
+- 객체는 자바스크립트 프로그램의 대상이다.
+- 내장 객체는 자바스크립트가 기본적으로 제공하는 객체이다.
+- BOM(Browser Object Model)은 브라우저를 객체로 인식하고, 브라우저 자신을 프로그램으로 통제하는 방법. 예를 들어, 창 열기, 창 닫기.
+- DOM(Document Object Model)은 현재 메모리에 로딩되어 있는 웹페이지를 객체로 인식하고, 웹페이지 자신을 프로그램으로 통제하는 방법. 예를 들어, 페이지 내의 특정 콘텐츠에 대한 수정, 삭제 등.
+- 사용자 정의 객체
+
+DOM(Document Object Model)
+- 웹페이지를 객체로 인식한다. 엘리먼트, 속성, 콘텐츠 모두가 객체가 된다.
+- 특정 객체를 찾는 탐색 과정이 필요하다. 엘리먼트 이름 기준, id 식별자(속성) 기준, name 식별자(속성) 기준, class 식별자(속성) 기준.
+
+엘리먼트 탐색 메소드(직접 선택자)
+1. document.getElementById(id)	Find an element by element id
+2. document.getElementsByTagName(name)	Find elements by tag name
+3. document.getElementsByClassName(name)	Find elements by class name
+4. document.getElementsByName(name)
+5. document.querySelectorAll("CSS Seletors")
+
+*/
+
+/* name="animal" 식별자를 가진 엘리먼트 탐색 */
+/* checked 프로퍼티는 체크박스 엘리먼트의 대한 상태 정보 제공(get) 및 설정(set) */
+/* 주의) name="animal" 식별자를 가진 엘리먼트가 여러개인 경우 모두 탐색된다. */
+/* 주의) 여러개의 객체를 반환 받은 경우 특정 객체(인덱스)만을 대상으로 액션 실행.  */
+/* 주의) name="" 식별자는 form 엘리먼트에서 사용한다. */ 
+
+function myFunction() {
+
+	var x = document.getElementsByName("animal");
+	var i;
+	for (i = 0; i < x.length; i++) {
+		if (x[i].type == "checkbox") {
+			x[i].checked = true;
+		}
+	}
+	
+}
+
+</script>
+</body>
+</html>

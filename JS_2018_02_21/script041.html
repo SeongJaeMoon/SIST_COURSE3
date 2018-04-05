@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+
+</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>자바스크립트 BOM(Browser Object Model)</h1>
+	<p id="demo">결과 출력 예정</p>
+</div>
+
+<script>
+
+/*
+자바스크립트 내장객체
+
+- 객체는 자바스크립트 프로그램의 대상이다.
+- 내장 객체는 자바스크립트가 기본적으로 제공하는 객체이다.
+- BOM(Browser Object Model)은 브라우저를 객체로 인식하고, 브라우저 자신을 프로그램으로 통제하는 방법. 예를 들어, 창 열기, 창 닫기.
+- DOM(Document Object Model)은 현재 메모리에 로딩되어 있는 웹페이지를 객체로 인식하고, 웹페이지 자신을 프로그램으로 통제하는 방법. 예를 들어, 페이지 내의 특정 콘텐츠에 대한 수정, 삭제 등.
+- 사용자 정의 객체
+
+BOM(Browser Object Model)
+- 자바스크립트가 실행되고 있는 브라우저 자신을 객체로 인식.
+- window 객체는 BOM에서 최상위 객체. 표기시 생략 가능.
+- document 객체는 브라우저에서 실행되고 있는 웹페이지 객체. window.document 또는 document 로 표기.
+
+JavaScript Cookies
+- 브라우저에서 사용자 정보를 저장하기 위해서 만든 전용 저장소
+- 작은 양의 정보를 일정 기간 동안 저장 가능.
+- 주의) 보안 문제 때문에 쿠키 허용하지 않는 경우가 있다.
+- 형식
+key=value;key=value;key=value;...
+- document.cookie(window.document.cookie) property를 사용해서 쿠키 생성 및 쿠키 정보 읽어내기 가능.
+- 유효기간 지정(expires 키 사용)이 없으면 브라우저 종료시 쿠키 정보가 자동 삭제된다. 
+
+*/
+
+/* Create a Cookie with JavaScript */
+document.cookie = "username=John Doe";
+
+</script>
+</body>
+</html>

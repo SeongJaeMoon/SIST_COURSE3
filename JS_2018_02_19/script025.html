@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+
+</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>자바스크립트 배열 객체</h1>
+	<p id="demo">결과 출력 예정</p>
+</div>
+
+<script>
+
+/*
+자바스크립트 내장객체
+
+- 객체는 자바스크립트 프로그램의 대상이다.
+- 내장 객체는 자바스크립트가 기본적으로 제공하는 객체이다.
+- BOM(Browser Object Model)은 브라우저를 객체로 인식하고, 브라우저 자신을 프로그램으로 통제하는 방법. 예를 들어, 창 열기, 창 닫기.
+- DOM(Document Object Model)은 현재 메모리에 로딩되어 있는 웹페이지를 객체로 인식하고, 웹페이지 자신을 프로그램으로 통제하는 방법. 예를 들어, 페이지 내의 특정 콘텐츠에 대한 수정, 삭제 등.
+- 사용자 정의 객체
+
+
+배열의 메소드
+concat()	Joins two or more arrays, and returns a copy of the joined arrays
+copyWithin()	Copies array elements within the array, to and from specified positions
+entries()	Returns a key/value pair Array Iteration Object
+every()	Checks if every element in an array pass a test
+fill()	Fill the elements in an array with a static value
+filter()	Creates a new array with every element in an array that pass a test
+find()	Returns the value of the first element in an array that pass a test
+findIndex()	Returns the index of the first element in an array that pass a test
+forEach()	Calls a function for each array element
+from()	Creates an array from an object
+includes()	Check if an array contains the specified element
+indexOf()	Search the array for an element and returns its position
+isArray()	Checks whether an object is an array
+join()	Joins all elements of an array into a string
+keys()	Returns a Array Iteration Object, containing the keys of the original array
+lastIndexOf()	Search the array for an element, starting at the end, and returns its position
+map()	Creates a new array with the result of calling a function for each array element
+pop()	Removes the last element of an array, and returns that element
+push()	Adds new elements to the end of an array, and returns the new length
+reduce()	Reduce the values of an array to a single value (going left-to-right)
+reduceRight()	Reduce the values of an array to a single value (going right-to-left)
+reverse()	Reverses the order of the elements in an array
+shift()	Removes the first element of an array, and returns that element
+slice()	Selects a part of an array, and returns the new array
+some()	Checks if any of the elements in an array pass a test
+sort()	Sorts the elements of an array
+splice()	Adds/Removes elements from an array
+toString()	Converts an array to a string, and returns the result
+unshift()	Adds new elements to the beginning of an array, and returns the new length
+valueOf()	Returns the primitive value of an array
+
+*/
+
+var array = ["TEST","SAMPLE","JAVASCRIPT","HTML/CSS"];
+
+console.log(array);
+console.log(array.toString());
+console.log(array.join());
+console.log(array.join("-"));
+
+console.log("-----------");
+var temp1 = array.sort();
+console.log(temp1.toString());
+var temp2 = array.reverse();
+console.log(temp2.toString());
+
+document.getElementById("demo").innerHTML = array.join("<br>");
+
+</script>
+</body>
+</html>

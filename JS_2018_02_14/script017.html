@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+
+</script>
+</head>
+<body>
+
+<div id="content">
+
+	<h1>자바스크립트 날짜 정보 객체</h1>
+	<p id="demo">결과 출력 예정</p>
+
+</div>
+
+<script>
+
+/*
+자바스크립트 내장객체
+
+- 객체는 자바스크립트 프로그램의 대상이다.
+- 내장 객체는 자바스크립트가 기본적으로 제공하는 객체이다.
+- BOM(Browser Object Model)은 브라우저를 객체로 인식하고, 브라우저 자신을 프로그램으로 통제하는 방법. 예를 들어, 창 열기, 창 닫기.
+- DOM(Document Object Model)은 현재 메모리에 로딩되어 있는 웹페이지를 객체로 인식하고, 웹페이지 자신을 프로그램으로 통제하는 방법. 예를 들어, 페이지 내의 특정 콘텐츠에 대한 수정, 삭제 등.
+- 사용자 정의 객체
+
+날짜 정보 객체
+- Date 객체를 이용해서 년,월,일,요일,시,분,초 정보를 얻을 수 있다.
+- 메소드 종류
+getDate()	Get the day as a number (1-31)
+getDay()	Get the weekday as a number (0-6)
+getFullYear()	Get the four digit year (yyyy)
+getHours()	Get the hour (0-23)
+getMilliseconds()	Get the milliseconds (0-999)
+getMinutes()	Get the minutes (0-59)
+getMonth()	Get the month (0-11)
+getSeconds()	Get the seconds (0-59)
+getTime()	Get the time (milliseconds since January 1, 1970)
+setDate()	Set the day as a number (1-31)
+setFullYear()	Set the year (optionally month and day)
+setHours()	Set the hour (0-23)
+setMilliseconds()	Set the milliseconds (0-999)
+setMinutes()	Set the minutes (0-59)
+setMonth()	Set the month (0-11)
+setSeconds()	Set the seconds (0-59)
+setTime()	Set the time (milliseconds since January 1, 1970)
+
+ */
+ 
+/* 현재 날짜 및 시간 정보 */
+var d = new Date();
+var text = "";
+text += "년:" + d.getFullYear() + "<br>";
+text += "월:" + (d.getMonth()+1) + "<br>";
+text += "일:" + d.getDate() + "<br>";
+document.getElementById("demo").innerHTML = text;
+
+</script>
+</body>
+</html>

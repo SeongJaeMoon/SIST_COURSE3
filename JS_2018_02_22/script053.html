@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script src="util.js"></script>
+
+</head>
+<body>
+
+<div id="content">
+	<h1>자바스크립트 DOM(Document Object Model)</h1>
+	<p id="demo">결과 출력 예정</p>
+</div>
+
+<script>
+
+/*
+자바스크립트 내장객체
+
+- 객체는 자바스크립트 프로그램의 대상이다.
+- 내장 객체는 자바스크립트가 기본적으로 제공하는 객체이다.
+- BOM(Browser Object Model)은 브라우저를 객체로 인식하고, 브라우저 자신을 프로그램으로 통제하는 방법. 예를 들어, 창 열기, 창 닫기.
+- DOM(Document Object Model)은 현재 메모리에 로딩되어 있는 웹페이지를 객체로 인식하고, 웹페이지 자신을 프로그램으로 통제하는 방법. 예를 들어, 페이지 내의 특정 콘텐츠에 대한 수정, 삭제 등.
+- 사용자 정의 객체
+
+DOM(Document Object Model)
+- 웹페이지를 객체로 인식한다. 엘리먼트, 속성, 콘텐츠 모두가 객체가 된다.
+- 특정 객체를 찾는 탐색 과정이 필요하다. 엘리먼트 이름 기준, id 식별자(속성) 기준, name 식별자(속성) 기준, class 식별자(속성), CSS 선택자 기준.
+
+
+Document Object Properties and Methods
+
+document.activeElement	Returns the currently focused element in the document
+document.addEventListener()	Attaches an event handler to the document
+document.adoptNode()	Adopts a node from another document
+document.anchors	Returns a collection of all <a> elements in the document that have a name attribute
+document.applets	Returns a collection of all <applet> elements in the document
+document.baseURI	Returns the absolute base URI of a document
+document.body	Sets or returns the document's body (the <body> element)
+document.close()	Closes the output stream previously opened with document.open()
+document.cookie	Returns all name/value pairs of cookies in the document
+document.charset	Deprecated. Use document.characterSet instead. Returns the character encoding for the document
+document.characterSet	Returns the character encoding for the document
+document.createAttribute()	Creates an attribute node
+document.createComment()	Creates a Comment node with the specified text
+document.createDocumentFragment()	Creates an empty DocumentFragment node
+document.createElement()	Creates an Element node
+document.createTextNode()	Creates a Text node
+document.defaultView	Returns the window object associated with a document, or null if none is available.
+document.designMode	Controls whether the entire document is editable.
+document.doctype	Returns the Document Type Declaration associated with the document
+document.documentElement	Returns the Document Element of the document (the <html> element)
+document.documentMode	Returns the mode used by the browser to render the document
+document.documentURI	Sets or returns the location of the document
+document.domain	Returns the domain name of the server that loaded the document
+document.domConfig	Obsolete. Returns the DOM configuration of the document
+document.embeds	Returns a collection of all <embed> elements the document
+document.execCommand()	Invokes the specified clipboard operation (cut, copy or paste) on the element currently having focus.
+document.forms	Returns a collection of all <form> elements in the document
+document.getElementById()	Returns the element that has the ID attribute with the specified value
+document.getElementsByClassName()	Returns a NodeList containing all elements with the specified class name
+document.getElementsByName()	Returns a NodeList containing all elements with a specified name
+document.getElementsByTagName()	Returns a NodeList containing all elements with the specified tag name
+document.hasFocus()	Returns a Boolean value indicating whether the document has focus
+document.head	Returns the <head> element of the document
+document.images	Returns a collection of all <img> elements in the document
+document.implementation	Returns the DOMImplementation object that handles this document
+document.importNode()	Imports a node from another document
+document.inputEncoding	Returns the encoding, character set, used for the document
+document.lastModified	Returns the date and time the document was last modified
+document.links	Returns a collection of all <a> and <area> elements in the document that have a href attribute
+document.normalize()	Removes empty Text nodes, and joins adjacent nodes
+document.normalizeDocument()	Removes empty Text nodes, and joins adjacent nodes
+document.open()	Opens an HTML output stream to collect output from document.write()
+document.querySelector()	Returns the first element that matches a specified CSS selector(s) in the document
+document.querySelectorAll()	Returns a static NodeList containing all elements that matches a specified CSS selector(s) in the document
+document.readyState	Returns the (loading) status of the document
+document.referrer	Returns the URL of the document that loaded the current document
+document.removeEventListener()	Removes an event handler from the document (that has been attached with the addEventListener() method)
+document.renameNode()	Renames the specified node
+document.scripts	Returns a collection of <script> elements in the document
+document.strictErrorChecking	Sets or returns whether error-checking is enforced or not
+document.title	Sets or returns the title of the document
+document.URL	Returns the full URL of the HTML document
+document.write()	Writes HTML expressions or JavaScript code to a document
+document.writeln()	Same as write(), but adds a newline character after each statement
+
+*/
+
+/* HTML DOM cookie Property */
+/* 쿠키 정보 반환하는 속성 */
+
+/* util.js */
+
+/* 식별자가 고유한 경우만 여러개 항목 저장 가능 */
+setCookie("pcode/1001", "", 1);
+setCookie("pcode/1002", "", 1);
+
+/* 식별자는 같고, value만 다르면 덮어쓰기 */
+setCookie("pcode", "1003", 1);
+setCookie("pcode", "1004", 1);
+
+</script>
+</body>
+</html>
