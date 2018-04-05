@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>SIST_쌍용교육센터</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+
+	   // jQuery methods go here...
+
+});
+</script>
+</head>
+<body>
+
+<div class="container">
+
+	<h1>Bootstrap Collapse</h1>
+	
+			<div>
+			<h3>2018.01~2018.05</h3>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>과목명</th>
+						<th>기간</th>
+						<th>강사</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+						Java SE 
+						<button type="button" class="btn btn-xs" 
+							data-toggle="collapse" data-target="#demo1">과목설명</button>
+							<div id="demo1" class="collapse">
+							Java SE는 프로그램의 기초과정으로.... 배웁니다.
+							</div>
+						</td>
+						<td>2018.01~2018.02</td>
+						<td>john@example.com</td>
+					</tr>
+					<tr>
+						<td>
+						Oracle 
+						<button type="button" class="btn btn-xs" 
+							data-toggle="collapse" data-target="#demo2">과목설명</button>
+							<div id="demo2" class="collapse">
+							Oracle은 데이터베이스의 한 종류로서 가장 많이 사용되는 DB입니다. ...
+							</div>	
+						</td>
+						<td>2018.02~2018.02</td>
+						<td>mary@example.com</td>
+					</tr>
+					<tr>
+						<td>JDBC <button type="button" class="btn btn-xs" data-toggle="collapse" data-target="#demo">과목설명</button></td>
+						<td>2018.02~2018.03</td>
+						<td>july@example.com</td>
+					</tr>
+					<tr>
+						<td>Project <button type="button" class="btn btn-xs" data-toggle="collapse" data-target="#demo">과목설명</button></td>
+						<td>2018.03~2018.05</td>
+						<td>july@example.com</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	
+</div>
+
+</body>
+</html>
