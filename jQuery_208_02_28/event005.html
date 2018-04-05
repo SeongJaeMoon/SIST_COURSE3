@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+$(document).ready(function(){
+	
+	/* mouseout(하위 요소에 영향 받음), mouseleave(하위 요소에 영향 받지 않음) 이벤트 차이 */
+	$("div#intro").mouseleave(function() {
+		$(this).find("#demo").css("background-color", "red");
+	});
+	
+});
+</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>jQuery Events</h1>
+	<div id="intro" style="background-color:white; border:1px solid red; padding:20px;">
+		<p id="demo">결과 출력 예정</p>
+		<button id="myBtn">마우스 이벤트</button>
+	</div>
+</div>
+
+</body>
+</html>

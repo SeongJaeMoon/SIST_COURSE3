@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+/* 스타일 지정 영역 */
+
+/* 선택자 {속성:값; ...} */
+
+/*
+
+CSS Text
+
+- 콘텐츠 중에서 문자에 대한 색상, 정렬 위치, 장식, 자간, 줄간 등을 지정.
+- color, text-align, text-decoration 등의 속성 사용
+- color : 전경색 지정
+- text-align : 정렬 위치 지정. left, center, right, justify 
+- text-decoration  : 장식 지정. underline, line-through,  overline, none 
+- letter-spacing : 자간 지정.
+- line-height : 줄간격 지정.
+
+*/
+
+div#content {
+	max-width: 1080px;
+	margin: auto;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a.anchor01:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+div#test p {
+	text-align: center;
+	line-height: 2em;
+}
+
+div#test h2 {
+	letter-spacing: 0.5em;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div id="content">
+
+	<div id="intro">
+		<h2>CSS Text</h2>
+		<p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.</p>
+	</div>
+	
+	<div id="test">
+		<h2>CSS Text</h2>
+		<p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.</p>
+		<p><a href="https://www.w3schools.com">W3Schools.com</a></p>
+		<p><a class="anchor01" href="https://www.w3schools.com">W3Schools.com</a></p>
+	</div>
+	
+</div>
+
+</body>
+</html>

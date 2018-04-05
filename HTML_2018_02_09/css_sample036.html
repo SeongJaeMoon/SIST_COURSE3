@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+/* 스타일 지정 영역 */
+
+/* 선택자 {속성:값; ...} */
+
+/*
+
+CSS Tables
+
+- 테이블 태그 사용시 경계선, 배경색 등을 지정.
+- 주의) 테이블 태그는 블럭 엘리먼트이지만 기본 너비가 콘텐츠 너비이다. 
+
+*/
+div#content {
+	max-width: 1080px;
+	margin: auto;
+}
+
+table#t01 {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table#t01 td, table#t01 th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+table#t01 tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+
+table#t01 th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div id="content">
+
+		<div>
+			<h2>CSS Tables</h2>
+			<table>
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+				</tr>
+				<tr>
+					<td>Peter</td>
+					<td>Griffin</td>
+				</tr>
+				<tr>
+					<td>Ernst </td>
+					<td>Handel</td>
+				</tr>
+				<tr>
+					<td>Lois</td>
+					<td>Griffin</td>
+				</tr>
+				<tr>
+					<td>Alfreds</td>
+					<td>Griffin</td>
+				</tr>
+			</table>
+		</div>
+
+		<div>
+			<h2>CSS Tables</h2>
+			<table id="t01">
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+				</tr>
+				<tr>
+					<td>Peter</td>
+					<td>Griffin</td>
+				</tr>
+				<tr>
+					<td>Ernst </td>
+					<td>Handel</td>
+				</tr>
+				<tr>
+					<td>Lois</td>
+					<td>Griffin</td>
+				</tr>
+				<tr>
+					<td>Alfreds</td>
+					<td>Griffin</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+
+</body>
+</html>

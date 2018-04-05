@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+</head>
+<body>
+
+<!-- 
+
+HTML Input Attributes
+
+- 엘리먼트가 가질 수 있는 속성에는 전용 속성과 일반 속성이 있다.
+- value 속성은 입력폼이 가질 수 있는 초기값 지정시 사용. 경우에 따라서 서버 전송시 전송되는 값 지정시 사용.
+- readonly(또는 readonly="readonly") 속성은 입력폼의 값을 수정할 수 없는 상태(읽기 전용)로 만든다. 서버 전송(서브밋 액션)시 입력된 값이 전송 된다.
+- disabled(또는 disabled="disabled") 속성은 입력폼을 비활성 상태로 만든다. 서버 전송(서브밋 액션)시 입력된 값이 전송이 안된다.
+- size 속성은 입력폼의 너비(크기) 지정시 사용. 권장사항은 CSS의 width 속성 사용.
+- maxlength 속성은 입력폼에 입력할 수 있는 글자수 제한.
+ 
+-->
+
+
+<!-- 
+
+HTML5 Attributes
+
+- autofocus(또는 autofocus="autofocus") 속성은 자동 초점 지정하는 속성.
+- min and max 속성은 숫자, 날짜의 범위 지정한다.
+- pattern 속성은 입력폼의 값이 정규표현식을 만족하는지 검사한다.
+- placeholder 속성은 입력폼에서 입력이 진행되기 전에 메시지 출력. 입력폼의 제목을 대체할 수 있다.
+- required(또는 required="required") 속성은 입력폼이 비어있는 경우 서브밋 액션이 진행되지 않는다. 
+
+ -->
+
+<h2>The value Attribute</h2>
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John">
+</form>
+
+<h2>The readonly Attribute</h2>
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John" readonly>
+</form>
+
+<h2>The disabled Attribute</h2>
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John" disabled>
+<button type="button">제출</button>
+<button type="button" disabled>제출</button>
+</form>
+
+<h2>The size Attribute</h2>
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John">
+<input type="text" name="firstname" value="John" size="10">
+<input type="text" name="firstname" value="John" style="width:100px;">
+</form>
+
+
+<h2>The maxlength Attribute</h2>
+<form action="">
+First name(max 10):<br>
+<input type="text" name="firstname" value="John">
+<input type="text" name="firstname" value="John" maxlength="10">
+</form>
+
+
+<hr>
+<h2>The autofocus Attribute</h2>
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John">
+<input type="text" name="firstname" value="John" autofocus>
+</form>
+
+<h2>The min and max Attributes</h2>
+<form action="">
+출결점수(max 20):<br>
+<input type="number" min="0" max="20">
+<input type="submit" value="서브밋">
+</form>
+
+<h2>The pattern Attributes</h2>
+<form action="">
+전화번호(XXX-XXXX-XXXX):<br>
+<input type="text" pattern="\d{3}-\d{4}-\d{4}">
+<input type="submit" value="서브밋">
+</form>
+
+<h2>The placeholder Attribute</h2>
+<form action="">
+First name:<input type="text" name="firstname" placeholder="max 20"><br>
+<input type="text" name="firstname" placeholder="First name"><br>
+</form>
+
+<h2>The required Attribute</h2>
+<form action="">
+First name:
+<input type="text" name="firstname">
+<input type="submit" value="서브밋">
+</form>
+<form action="">
+First name(필수):
+<input type="text" name="firstname" required>
+<input type="submit" value="서브밋">
+</form>
+
+
+</body>
+</html>

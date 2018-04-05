@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+/* 스타일 지정 영역 */
+
+/* 선택자 {속성:값; ...} */
+
+/* 
+CSS element Selector
+
+- 특정 엘리먼트 이름(body, h1, p, table, ...)을 기준으로 엘리먼트 탐색.
+- 주의) 동일한 엘리먼트 이름 전체에 대해서 동일 스타일 지정 가능.
+- 주의) 엘리먼트 식별자 + id 식별자, 엘리먼트 식별자 + class 식별자 사용 가능.
+- 형식
+element {
+    css declarations;
+}
+*/
+p {
+	color: red;
+}
+
+div {
+	background-color: yellow;
+}
+
+div#test {
+	background-color: white;
+}
+
+</style>
+
+
+</head>
+<body>
+
+	<h2>CSS element Selector</h2>
+	<p>The element selector selects all elements with the specified element name.</p>
+
+	<h2 id="test">CSS element Selector</h2>
+	<p id="intro">The element selector selects all elements with the specified element name.</p>
+
+	<div>
+		<h2>CSS element Selector</h2>
+		<p>The element selector selects all elements with the specified element name.</p>
+	</div>
+
+	<div id="intro">
+		<h2>CSS element Selector</h2>
+		<p>The element selector selects all elements with the specified element name.</p>
+	</div>
+	
+	<div id="test">
+		<h2>CSS element Selector</h2>
+		<p>The element selector selects all elements with the specified element name.</p>
+	</div>
+
+</body>
+</html>

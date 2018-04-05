@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+
+$(document).ready(function(){
+	   
+	//형제 태그를 대상으로 css 적용
+	//형제 선택자(siblings(), prev(), prevAll(), prevUtil(), next(), nextAll(), nextUtil()) 사용
+	$("p#demo").siblings().css("border", "1px solid red");
+	
+});
+
+</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>jQuery 선택자</h1>
+	<div>
+		<p>Hello, World!</p>
+		<p id="demo">Hello, World!</p>
+		<p class="demo">Hello, World!</p>
+		<p class="demo">Hello, World!</p>
+	</div>
+</div>
+
+</body>
+</html>

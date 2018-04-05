@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+$(document).ready(function(){
+	
+	/* 주의) click 이벤트를 특정 객체에 지정한 경우 객체 자신이 가진 click 기능을 수행될 수 있다. 예를 들어, <a> 태그. */
+	$("a#myBtn").click(function(e) {
+		e.preventDefault();
+		$("p#demo").html("Hello, World!").css("color", "red");	
+	});
+	
+});
+</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>jQuery Events</h1>
+	<div>
+		<p id="demo">결과 출력 예정</p>
+		<a id="myBtn" href="http://www.naver.com">클릭 이벤트</a>
+	</div>
+</div>
+
+</body>
+</html>

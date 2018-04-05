@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+$(document).ready(function(){
+
+	$("div#content input:text").keydown(function(e) {
+		console.log(e.keyCode);
+
+		/* 숫자키, Backspace 범위를 벗어나는 경우 keydown 무효화 */
+		/* 주의) 한글 입력 상태인 경우는 안됩니다. */
+		if ((e.keyCode>=48 && e.keyCode<=57) || (e.keyCode == 8)) {
+			
+		} else {
+			e.preventDefault();
+		}
+		
+	});
+
+});
+</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>jQuery Events</h1>
+	<form name="myForm">
+		Name: <input type="text" name="fname" placeholder="이름(5자 이내)"><br>
+		Phone: <input type="text" name="fphone" placeholder="전화번호(- 제외)"><br>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
+</body>
+</html>

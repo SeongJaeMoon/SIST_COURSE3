@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+
+/* 스타일 지정 영역 */
+
+/* 선택자 {속성:값; ...} */
+
+/*
+
+CSS Overflow
+
+- 제한된 영역에 콘텐츠가 많이 나타나야 할 때 스크롤바에 대한 지정
+- 영역에 제한이 없는 경우가 기본 상태이므로 콘텐츠가 늘어나면 영역의 크기도 같이 늘어난다.
+- 종류
+1. visible - Default. The overflow is not clipped. It renders outside the element's box
+2. hidden - The overflow is clipped, and the rest of the content will be invisible
+3. scroll - The overflow is clipped, but a scrollbar is added to see the rest of the content
+4. auto - If overflow is clipped, a scrollbar should be added to see the rest of the content
+
+*/
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+div#intro {
+    border: 3px solid #ff751a;
+}
+
+div#test {
+	overflow: auto;
+ 	height: 200px;
+    border: 3px solid #73AD21;
+}
+
+</style>
+
+</head>
+<body>
+
+	<div id="content">
+
+		<div id="intro">
+			<h2>CSS Overflow</h2>
+			<p>The overflow property specifies whether to clip content or to add scrollbars when the content of an element is too big to fit in a specified area.</p>
+			<p>This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+		</div>
+
+		<div id="test">
+			<h2>CSS Overflow</h2>
+			<p>The overflow property specifies whether to clip content or to add scrollbars when the content of an element is too big to fit in a specified area.</p>
+			<p>This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+		</div>
+
+	</div>
+
+</body>
+</html>

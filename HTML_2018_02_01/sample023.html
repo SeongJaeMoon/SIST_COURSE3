@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- 
+
+HTML Table - Cells that Span Many Columns
+- 셀 병합 기능. colspan 속성으로 표현. <th>, <td> 태그 안에 표기.
+- 여러개의 셀을 하나의 셀로 표현
+- 예를 들어,
+<table>
+	<tr>
+		<th>이름</th>
+		<th colspan="2">전화번호</th>
+	</tr>
+	<tr>
+		<td>홍길동</td>
+		<td>02-1234-1234</td>
+		<td>010-1234-1234</td>
+	</tr>
+</table>
+
+
+HTML Table - Cells that Span Many Rows
+- 셀 병합 기능. rowspan 속성으로 표현. <th>, <td> 태그 안에 표기.
+- 여러개의 셀을 하나의 셀로 표현
+- 예를 들어,
+<table>
+	<tr>
+		<th>이름</th>
+		<td>홍길동</td>
+	</tr>
+	<tr>
+		<th rowspan="2">전화번호</th>
+		<td>02-1234-1234</td>
+	</tr>
+	<tr>
+		<td>010-1234-1234</td>
+	</tr>
+</table>
+
+ -->
+
+	<table style="width: 100%">
+		<tr>
+			<th>Name</th>
+			<th colspan="2">Telephone</th>
+		</tr>
+		<tr>
+			<td>Bill Gates</td>
+			<td>55577854</td>
+			<td>55577855</td>
+		</tr>
+	</table>
+
+	<hr>
+	<table style="width: 100%">
+		<tr>
+			<th>Name</th>
+			<td>Bill Gates</td>
+		</tr>
+		<tr>
+			<th rowspan="2">Telephone</th>
+			<td>55577854</td>
+		</tr>
+		<tr>
+			<td>55577855</td>
+		</tr>
+	</table>
+
+</body>
+</html>

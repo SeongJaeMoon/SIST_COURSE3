@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+/* 스타일 지정 영역 */
+
+/* 선택자 {속성:값; ...} */
+
+/* 
+CSS #id Selector
+
+- id="식별자" 속성을 엘리먼트에 부여하고, id 속성의 이름을 이용해서 대상을 탐색한다.
+- id="식별자" 속성은 여러개의 엘리먼트에 같은 식별자 지정 불가. 선택자 사용시 특정 엘리먼트에만 스타일 지정 가능.
+- 주의) 하나의 엘리먼트에 두 개의 id="" 속성 지정 불가.
+- 형식
+#id {
+    css declarations;
+}
+*/
+#test {
+	color: red;
+}
+
+#intro {
+	background-color: yellow;
+}
+
+</style>
+
+
+</head>
+<body>
+
+	<h2>CSS #id Selector</h2>
+	<p>The #id selector styles the element with the specified id.</p>
+
+	<h2 id="test">CSS #id Selector</h2>
+	<p id="test">The #id selector styles the element with the specified id.</p>
+
+	<div id="intro">
+		<h2>CSS #id Selector</h2>
+		<p>The #id selector styles the element with the specified id.</p>
+	</div>
+
+	<div id="intro test">
+		<h2>CSS #id Selector</h2>
+		<p>The #id selector styles the element with the specified id.</p>
+	</div>
+	
+</body>
+</html>
