@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+/* 스타일 지정 영역 */
+
+/* 선택자 {속성:값; ...} */
+
+/* 
+
+CSS Pseudo-classes
+
+- 엘리먼트의 특정 상황(상태)을 이용해서 스타일 지정.
+- 예를 들어, <a> 태그에 의한 링크가 걸린 대상이 있다면, :link, :visited, :hover, :active 상태가 존재한다.
+- 주의) id 선택자, class 선택자와 같이 표기하는 경우 끝 부분에 표기. 예를 들어, 엘리먼트#아이디식별자:Pseudo-class, 엘리먼트.클래스식별자:Pseudo-class   
+
+- 형식
+selector:pseudo-class {
+    property:value;
+}
+
+- 종류
+:active Selects the active link
+:checked Selects every checked <input> element
+:disabled Selects every disabled <input> element
+:empty Selects every <p> element that has no children
+:enabled Selects every enabled <input> element
+:first-child Selects every <p> elements that is the first child of its parent
+:first-of-type Selects every <p> element that is the first <p> element of its parent
+:focus Selects the <input> element that has focus
+:hover Selects links on mouse over
+:in-range Selects <input> elements with a value within a specified range
+:invalid Selects all <input> elements with an invalid value
+:lang(language) Selects every <p> element with a lang attribute value starting with "it"
+:last-child Selects every <p> elements that is the last child of its parent
+:last-of-type Selects every <p> element that is the last <p> element of its parent
+:link Selects all unvisited links
+:not(selector) Selects every element that is not a <p> element
+:nth-child(n) Selects every <p> element that is the second child of its parent
+:nth-last-child(n) Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n) Selects every <p> element that is the second <p> element of its parent, counting from the last child
+:nth-of-type(n) Selects every <p> element that is the second <p> element of its parent
+:only-of-type Selects every <p> element that is the only <p> element of its parent
+:only-child Selects every <p> element that is the only child of its parent
+:optional Selects <input> elements with no "required" attribute
+:out-of-range Selects <input> elements with a value outside a specified range
+:read-only Selects <input> elements with a "readonly" attribute specified
+:read-write Selects <input> elements with no "readonly" attribute
+:required Selects <input> elements with a "required" attribute specified
+:root Selects the document's root element
+:target Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid Selects all <input> elements with a valid value
+:visited Selects all visited links
+
+*/
+
+input[type="text"]:enabled {
+	color:blue;
+}
+
+input[type="text"]:disabled {
+	color:red;
+}
+
+
+</style>
+
+</head>
+<body>
+
+	<h2>CSS Pseudo-classes</h2>
+	<p>A pseudo-class is used to define a special state of an element.</p>
+
+	<form action="">
+	First name: <input type="text" name="firstname" value="John"><br>
+	Last name: <input type="text" name="lastname" value="Doe" disabled><br>
+	<input type="submit" value="submit">
+	</form>
+	
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+/* 스타일 지정 영역 */
+
+/* 선택자 {속성:값; ...} */
+
+/* 
+
+CSS combinators Selector
+
+- 두 개 이상의 선택자를 같이 표기하되, 선택자 간의 관계를 이용해서 지정하는 방법
+1. descendant selector (space)
+2. child selector (>)
+3. adjacent sibling selector (+)
+4. general sibling selector (~)
+- 예를 들어, 선택자1 선택자2, 선택자1 > 선택자2, 선택자1 + 선택자2, 선택자1 ~ 선택자2
+
+*/
+
+h2#test ~ p {
+	color:red;
+}
+
+</style>
+
+</head>
+<body>
+
+	<h2>CSS combinators Selector</h2>
+	<p>A combinator is something that explains the relationship between the selectors.</p>
+
+	<h2 id="test">CSS combinators Selector</h2>
+	<p id="intro">A combinator is something that explains the relationship between the selectors.</p>
+
+	<h2 class="test">CSS combinators Selector</h2>
+	<p class="test">A combinator is something that explains the relationship between the selectors.</p>
+
+	<div>
+		<h2>CSS combinators Selector</h2>
+		<p>A combinator is something that explains the relationship between the selectors.</p>
+	</div>
+
+	<div id="intro">
+		<div id="test">
+			<h2>CSS combinators Selector</h2>
+			<p>A combinator is something that explains the relationship between the selectors.</p>
+		</div>
+	</div>
+	
+</body>
+</html>
