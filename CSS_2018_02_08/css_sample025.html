@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+/* 스타일 지정 영역 */
+
+/* 선택자 {속성:값; ...} */
+
+/*
+
+CSS Borders
+
+- 블럭 엘리먼트 경계선 설정
+- 색상(border-color), 굵기(border-width), 모양(스타일 border-style) 지정 가능.
+- 모양(스타일) 종류
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+
+- 주의) 경계선 면별로 다르게 지정 가능. 위(top), 오른쪽(right), 아래쪽(bottom), 왼쪽(left). 예를 들어, border-top-color, border-bottom-color
+- 주의) border 속성을 이용한 여러개의 속성을 한 번에 지정 가능.
+
+*/
+
+div#box {
+	padding: 15px;
+	background-color: #e6e6e6;
+}
+
+div#test {
+	
+	padding: 5px;
+	background-color: white;
+
+	border-left-width: 2px;
+	border-left-color: red;
+	border-left-style: solid;
+	
+}
+
+</style>
+
+
+</head>
+<body>
+
+	<div>
+		<h2>CSS Borders</h2>
+		<p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+	</div>
+	
+	<div id="box">
+		<div id="test">
+			<h2>CSS Borders</h2>
+			<p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+		</div>
+	</div>
+
+</body>
+</html>
