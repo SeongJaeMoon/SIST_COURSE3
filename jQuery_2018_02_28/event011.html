@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+$(document).ready(function(){
+
+	var size = 16;
+	$("input#fontSize").val("font-size:"+size+"px");
+
+	$("button#plus").on("click", function() {
+		++size;
+		$("div#demo").css("font-size", size+"px");
+		$("input#fontSize").val("font-size:"+size+"px");
+	});
+	
+	$("button#minus").on("click", function() {
+		--size;
+		$("div#demo").css("font-size", size+"px");
+		$("input#fontSize").val("font-size:"+size+"px");
+	});
+	
+});
+</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>jQuery Events</h1>
+	<div>	
+		<button id="plus">글자크기증가</button>
+		<button id="minus">글자크기감소</button>
+		<input type="text" id="fontSize" disabled="disabled">
+	</div>
+	<div id="demo" style="border:1px solid red; padding:20px; margin-top:10px;">
+	The on() method attaches one or more event handlers for the selected elements and child elements.
+	As of jQuery version 1.7, the on() method is the new replacement for the bind(), live() and delegate() methods. This method brings a lot of consistency to the API, and we recommend that you use this method, as it simplifies the jQuery code base.
+	</div>
+</div>
+
+</body>
+</html>
