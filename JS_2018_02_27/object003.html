@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIST_쌍용교육센터</title>
+
+<style>
+
+div#content {
+	width: 1080px;
+	margin: auto;
+}
+
+</style>
+
+<script>
+
+</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>자바스크립트 Objects</h1>
+	<p id="demo">결과 출력 예정</p>
+</div>
+
+<script>
+/*
+
+자바스크립트 사용자 정의 객체(JavaScript Objects)
+- 사용자가 직접 정의한 객체
+- 객체는 자바스크립트 프로그램의 대상이다.
+- 내장 객체는 자바스크립트가 기본적으로 제공하는 객체이다.
+- BOM(Browser Object Model)은 브라우저를 객체로 인식하고, 브라우저 자신을 프로그램으로 통제하는 방법. 예를 들어, 창 열기, 창 닫기.
+- DOM(Document Object Model)은 현재 메모리에 로딩되어 있는 웹페이지를 객체로 인식하고, 웹페이지 자신을 프로그램으로 통제하는 방법. 예를 들어, 페이지 내의 특정 콘텐츠에 대한 수정, 삭제 등.
+- 사용자 정의 객체
+- 형식
+1. object literal
+2. keyword new
+3. object constructor
+
+
+프로퍼티 접근 형식
+1. objectName.property          // person.age
+2. objectName["property"]       // person["age"]
+3. objectName[expression]       // x = "age"; person[x]
+
+주의) 프로퍼티는 동적 추가, 삭제 가능
+
+*/
+
+/* 프로퍼티 접근 */
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+console.log(person.firstName);
+console.log(person["firstName"]);
+var txt = "";
+for (x in person) {
+    txt += person[x] + "/";
+}
+console.log(txt);
+
+/* 프로퍼티 동적 추가 */
+person.nationality = "English";
+
+/* 프로퍼티 동적 삭제 */
+delete person.age;
+
+/* 프로퍼티 상태 확인 */
+console.log(person);
+
+</script>
+</body>
+</html>
