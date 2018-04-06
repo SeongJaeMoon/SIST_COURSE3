@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>SIST_쌍용교육센터</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script>
+	
+</script>
+</head>
+<body>
+
+	<div class="container">
+
+		<h1>XML Parser</h1>
+
+		<button type="button" onclick="loadXMLDoc()">breakfast_menu</button>
+
+		<div id="demo">
+		
+			<h2>breakfast_menu</h2>
+			
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>name</th>
+						<th>price</th>
+						<th>calories</th>
+						<th>picture</th>
+						<th>description</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		
+		</div>
+
+	</div>
+
+
+	<script>
+	//문제) breakfast_menu.xml 파일의 정보를 웹페이지에 출력
+	/*
+	출력 예)
+	<breakfast_menu>
+		name / price / calories / picture / description
+	1.  XXXX / XXXX  / XXXXXXX / XXXXX / XXXXXXXXX
+	2.
+	3.
+	4.
+	5.
+	*/
+	function loadXMLDoc() {
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				myFunction(this);
+			}
+		};
+		xmlhttp.open("GET", "breakfast_menu.xml", true);
+		xmlhttp.send();
+	}
+
+	function myFunction(xml) {
+		var x, i, xmlDoc, txt;
+		xmlDoc = xml.responseXML;
+		txt = "";
+		x = xmlDoc.querySelectorAll("food");
+		for (i = 0; i < x.length; i++) {
+			txt += "<tr>";
+			txt += "<td>" + x[i].querySelector("name").textContent + "</td>";
+			txt += "<td>" + x[i].querySelector("price").textContent + "</td>";
+			txt += "<td>" + x[i].getElementsByTagName("calories")[0].childNodes[0].nodeValue + "</td>";
+			txt += "<td>" + x[i].getElementsByTagName("picture")[0].childNodes[0].nodeValue + "</td>";
+			txt += "<td>" + x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue + "</td>";
+			txt += "</tr>";
+		}
+		document.querySelector("div#demo table tbody").innerHTML = txt;
+	}
+	</script>
+
+</body>
+</html>
